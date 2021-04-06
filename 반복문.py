@@ -6,4 +6,13 @@
 
 # print(a[0: 1000000])
 
-print(1 in [1,2,3])
+# print(1 in [1,2,3])
+
+# a = "hello"
+# b = a.upper()
+# print(b)
+
+a = [1, 2, 3 ]
+b = a + [4]
+
+print(b)
