@@ -40,16 +40,44 @@
 # print("{}를 더할 때  {} 를 넘으며, 그 때의 값은 {} 입니다.".format(i-1, limit, sum_value))
 
 
-max_value = 0
-a = 0
-b = 0
+# max_value = 0
+# a = 0
+# b = 0
 
-for i in range(1, 99 + 1):
-    j = 100 - i 
+# for i in range(1, 99 + 1):
+#     j = 100 - i 
   
-    if max_value < i * j:
-        max_value = i * j
-        a = i
-        b = j
+#     if max_value < i * j:
+#         max_value = i * j
+#         a = i
+#         b = j
+# print("최대가 되는 경우: {} * {} = {}".format(a, b, max_value))
 
-print("최대가 되는 경우: {} * {} = {}".format(a, b, max_value))
+# print(sum([273, 52, 32, 57, 103]))
+# print(max([273, 52, 32, 57, 103]))
+#일회용 함수  reversed(), enumerate(), items()
+
+# a ={
+#     "key_1" : "value_1",
+#     "key_2" : "value_2",
+#     "key_3" : "value_3"
+# }
+# for key, value in a.items():
+#     print("{}키의 값은 {}입니다.".format(key, value))
+
+# array = []
+
+# for i in range(0, 20, 2): # [0,2, 4, 6, 8, 10, 12, 14, 16, 18]
+#     array.append(i * i)
+
+# array_1 = [i for i in range(10) if i % 3 == 0]
+
+
+# print(array_1)
+output = [i for i in range(1, 100 + 1) if "{:b}".format(i).count("0") == 1]
+for i in output:
+    print("{}: {}".format(i, "{:b}".format(i)))
+print("합계 : {}".format(sum(output)))
+# for i in output:
+#     print("{} : {}".format(i, "{:b}".format(i)))
+# print("합계 :",sum(output))
