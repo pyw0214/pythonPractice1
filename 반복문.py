@@ -12,7 +12,30 @@
 # b = a.upper()
 # print(b)
 
-a = [1, 2, 3 ]
-b = a + [4]
+# a = [1, 2, 3 ]
+# b = a + [4]
 
-print(b)
+# print(b)
+#20210410
+#range <= 자료형!
+
+#range(시작, 끝, 단계) 
+# range(0, 10, 1)
+# print(list(range(10)))
+
+# array = [273, 52, 103, 32, 57]
+
+
+# for i in reversed(array):
+#     print(i)
+
+#while
+
+import time 
+
+처음 = time.time()
+
+while  처음 + 5 > time.time():
+    pass
+
+print("프로그램이 종료되었습니다.")
