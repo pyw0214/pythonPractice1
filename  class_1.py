@@ -18,14 +18,29 @@ class Student:
       print("객체가 생성되었습니다.")
       self.이름 = 이름
       self.나이 = 나이
-   def __del__(self):
-      print("객체가 소멸되었습니다.")
 
-   def 출력(self):
-      print(self.이름, self.나이)
+   def __eq__(self, other):
+      return self.나이 == other.나이 and \
+         (self.이름 == other.이름)
+   def __nq__(self, other):
+       return self.나이 != other.나이
+   def __gt__(self, other):
+       return self.나이 > other.나이
+   def __ge__(self, other):
+       return self.나이 >= other.나이
+   def __lt__(self, other):
+       return self.나이 < other.나이
+   def __le__(self, other):
+       return self.나이 <= other.나이
+
 
 student = Student("박용욱", 3)
-student.출력()
+print(student == student)
+print(student != student) 
+print(student > student)   #greater than
+print(student >= student)  #greater than or equal to
+print(student < student)
+print(student <= student)
 
 
 
